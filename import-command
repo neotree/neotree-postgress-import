@@ -1,0 +1,1 @@
+cat data.json | psql -h localhost -p 5432 jsonexports -c "COPY fake_json (data) FROM STDIN;"
